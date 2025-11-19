@@ -19,7 +19,7 @@ export default function Hero() {
               backgroundImage: 'url(https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)',
             }}
           >
-            <div className="absolute inset-0 bg-dark/80"></div>
+            <div className="absolute inset-0 bg-dark/90"></div>
           </div>
         </div>
 
@@ -37,6 +37,7 @@ export default function Hero() {
           <div className="absolute top-20 left-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-40 h-40 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
           <div className="absolute top-1/2 right-20 w-24 h-24 bg-accent/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/3 left-10 w-20 h-20 bg-accent/8 rounded-full blur-2xl animate-pulse md:hidden" style={{ animationDelay: '1.5s' }}></div>
           
           {/* Decorative icons */}
           <div className="absolute top-32 right-32 hidden lg:block opacity-20">
@@ -62,9 +63,9 @@ export default function Hero() {
                 A.V Auto Service — Service auto profesional în{' '}
                 <span className="text-accent">Pantelimon</span>
               </h1>
-              <p className="hidden md:block text-secondary text-lg mb-8 max-w-2xl mx-auto">
+              <p className="text-secondary text-base md:text-lg mb-6 md:mb-8 max-w-2xl mx-auto px-4">
                 Oferim servicii complete de diagnosticare electronică, reparații mecanice, revizii și întreținere auto. 
-                Experiență, profesionalism și garanție 6 luni pentru toate lucrările.
+                <span className="hidden md:inline"> Experiență, profesionalism și garanție 6 luni pentru toate lucrările.</span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
